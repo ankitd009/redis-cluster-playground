@@ -1,3 +1,8 @@
+appendonly.aof
+auto-nodes.conf
+dump.rdb
+
+
 *.gem
 *.rbc
 /.config
