@@ -4,12 +4,12 @@
 
 Replace `<path-to-repo>` to mount config & data directory in the Redis container.
 ```
-docker run --name=redis -d --rm -p 6379:6379 -v <path-to-repo>/redis-cluster-playground/data:/redis/data -v <path-to-repo>/redis-cluster-playground/config:/redis/config redis
+docker run --name=redis -d --rm -p 6379:6379 -v <path-to-repo>/redis-cluster-playground/data:/redis/data -v <path-to-repo>/redis-cluster-playground/config:/redis/config redis:6.0
 ```
 
 Example:
 ```
-docker run --name=redis -d --rm -p 6379:6379 -v /home/capeta/workspace/redis-cluster-playground/data:/redis/data -v /home/capeta/workspace/redis-cluster-playground/config:/redis/config redis
+docker run --name=redis -d --rm -p 6379:6379 -v /home/capeta/workspace/redis-cluster-playground/data:/redis/data -v /home/capeta/workspace/redis-cluster-playground/config:/redis/config redis:6.0
 ```
 
 ## Connect to redis container using bash
